@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+Context menu events
+        </title>
+    </head>
+    <body>
+        <div id="myDiv">Right-click me</div>
+
+<script>
+  const myDiv = document.getElementById("myDiv");
+
+  myDiv.addEventListener("contextmenu", (event) => {
+    event.preventDefault(); // Prevents the default context menu
+    alert("Context menu opened!");
+  });
+</script>
+
+    </body>
+</html>

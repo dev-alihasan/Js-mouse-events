@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title> </title>
+  </head>
+  <body>
+    <div id="myDiv">Scroll me</div>
+
+    <script>
+      const myDiv = document.getElementById("myDiv");
+
+      myDiv.addEventListener("wheel", (event) => {
+        if (event.deltaY > 0) {
+          alert("Scrolled down!");
+        } else {
+          alert("Scrolled up!");
+        }
+      });
+    </script>
+  </body>
+</html>

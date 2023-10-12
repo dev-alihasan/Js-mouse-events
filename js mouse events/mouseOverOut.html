@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Mouse over and out events</title>
+  </head>
+  <body>
+    <div id="myDiv">Mouse over me</div>
+
+    <script>
+      const myDiv = document.getElementById("myDiv");
+
+      myDiv.addEventListener("mouseover", () => {
+        myDiv.innerHTML = "Mouse over!";
+      });
+
+      myDiv.addEventListener("mouseout", () => {
+        myDiv.innerHTML = "Mouse out!";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Mouse move events</title>
+  </head>
+  <body>
+    <div id="myDiv">Move your mouse here</div>
+
+    <script>
+      const myDiv = document.getElementById("myDiv");
+      myDiv.addEventListener("mousemove", () => {
+        console.log("Mouse moved over the div!");
+      });
+    </script>
+  </body>
+</html>

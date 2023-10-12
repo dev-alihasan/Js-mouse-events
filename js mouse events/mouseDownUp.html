@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Mouse down and up events</title>
+  </head>
+
+  <body>
+    <button id="myButton">Press and hold</button>
+
+    <script>
+      const button = document.getElementById("myButton");
+
+      button.addEventListener("mousedown", () => {
+        button.innerHTML = "Mouse down!";
+      });
+
+      button.addEventListener("mouseup", () => {
+        button.innerHTML = "Mouse up!";
+      });
+    </script>
+  </body>
+</html>
